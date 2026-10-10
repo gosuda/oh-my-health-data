@@ -128,14 +128,14 @@
           <div class="poster-tools"><button onclick={savePoster} disabled={exporting}><span aria-hidden="true">↓</span> {exporting ? '저장하는 중' : '포스터 저장'}</button><button onclick={() => shareCampaign()}><span aria-hidden="true">↗</span> 내 요구 공유</button></div>
         </div>
       </div>
-      <div class="action-bar"><div><h3>병무청에 직접 요구하세요.</h3><p>선택한 요구에 맞는 청구 문안을 준비했습니다.</p></div><button class="button button-dark" onclick={openLetter}>내 요구서 만들기 <span aria-hidden="true">↗</span></button></div>
+      <div class="action-bar"><div><h3>병무청에 직접 요구하세요.</h3></div><button class="button button-dark" onclick={openLetter}>내 요구서 만들기 <span aria-hidden="true">↗</span></button></div>
       <p class="agent-entry">에이전트를 사용하고 있나요? <a href="#agent-skill">민원 skill로 준비하기 ↗</a></p>
     </div>
   </section>
 
   <SkillPromo />
 
-  <section class="spread-section" aria-labelledby="spread-title"><div class="container spread-inner"><div><h2 id="spread-title">같이 신검 받은 친구는,<br />이 사실을 알고 있을까요?</h2><p>어떤 건강정보가 쓰이는지, 우리도 알아야 합니다.</p></div><button class="button button-dark" onclick={() => shareCampaign('facts')}>신검 받은 친구에게 알리기 <span aria-hidden="true">↗</span></button></div></section>
+  <section class="spread-section" aria-labelledby="spread-title"><div class="container spread-inner"><div><h2 id="spread-title">같이 신검 받은 친구는,<br />이 사실을 알고 있을까요?</h2></div><button class="button button-dark" onclick={() => shareCampaign('facts')}>신검 받은 친구에게 알리기 <span aria-hidden="true">↗</span></button></div></section>
 
   <section class="evidence-banner"><div class="container"><div><h2>근거도, 함께 엽니다.</h2><p>병무청의 처리방침부터 데이터 목록과 법령까지.<br />이 캠페인의 주장을 뒷받침하는 공식 자료를 확인하세요.</p></div><a href="/sources/" class="evidence-arrow" aria-label="공식 근거 페이지로 이동">↗</a></div></section>
 </main>
