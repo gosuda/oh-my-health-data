@@ -8,4 +8,5 @@ build/
 .DS_Store
 npm-debug.log*
 /docs/CAMPAIGN_PLAN.md
+/docs/local/
 /static/downloads/mma-health-data.zip

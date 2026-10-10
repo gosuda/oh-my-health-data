@@ -42,6 +42,7 @@ mma-health-data skill을 사용해 병무청에 어떤 건강정보를 연구용
 
 ## 문서
 
-- [내부 조사 노트](research/README.md)
+- [GitHub Pages 배포](docs/GITHUB_PAGES.md)
+- [공개 근거 자료](research/README.md)
 - [근거 데이터](research/evidence.json)
 - [공식 청구 질문](research/questions.ko.json)

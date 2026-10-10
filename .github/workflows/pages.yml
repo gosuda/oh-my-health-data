@@ -1,0 +1,69 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Activate only after the campaign repository is public under gosuda.
+    if: github.repository_owner == 'gosuda' && github.event.repository.private == false && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check Svelte and TypeScript
+        run: npm run check
+
+      - name: Build static site and public skill archive
+        run: npm run build
+
+      - name: Check SEO, request templates, and public skill archive
+        run: |
+          python3 -B scripts/test_seo.py
+          python3 -B scripts/test_create_case.py
+          python3 -B scripts/test_package_skill.py
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check Pages configuration
+        uses: actions/configure-pages@v6
+
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v5

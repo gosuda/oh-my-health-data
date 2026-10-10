@@ -18,7 +18,7 @@
       <h2 id="skill-title">민원 문안,<br /><span>에이전트에게 맡기세요.</span></h2>
       <p class="skill-description">어떤 정보를 줬는지, 언제 지우는지, 연구에서 빠질 수 있는지.<br />묻고 싶은 내용을 말하면 에이전트가 청구서를 준비합니다.</p>
       <ul class="skill-features"><li>내 질문에 맞는 청구·민원 유형 선택</li><li>공식 근거와 템플릿으로 문안 자동 작성</li><li>받은 답변 분석과 후속 질문 정리</li></ul>
-      <div class="skill-actions"><a class="button skill-download" href="/downloads/mma-health-data.zip" download>민원 skill 받기 <span aria-hidden="true">↓</span></a><a class="skill-source" href="https://github.com/gosuda/ohy-my-health-data/tree/main/skills/mma-health-data" target="_blank" rel="noopener noreferrer">skill 소스 보기 ↗</a></div>
+      <div class="skill-actions"><a class="button skill-download" href="/downloads/mma-health-data.zip" download>민원 skill 받기 <span aria-hidden="true">↓</span></a><a class="skill-source" href="https://github.com/gosuda/oh-my-health-data/tree/main/skills/mma-health-data" target="_blank" rel="noopener noreferrer">skill 소스 보기 ↗</a></div>
     </div>
     <div class="skill-start">
       <ol class="skill-steps"><li><span>01</span>ZIP을 받고 압축을 풀어 주세요.</li><li><span>02</span>폴더 전체를 사용하는 에이전트에 skill로 추가하세요.</li><li><span>03</span>아래 문장으로 민원 준비를 요청하세요.</li></ol>
