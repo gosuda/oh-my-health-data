@@ -1,4 +1,7 @@
 <script>
+  import Seo from '$lib/Seo.svelte';
+  import { SEO_PAGES } from '$lib/seo';
+
   const sections = [
     { id: 'research', number: '01', label: '연구에 쓰이는 정보' },
     { id: 'consent', number: '02', label: '동의와 선택권' },
@@ -18,13 +21,7 @@
   ];
 </script>
 
-<svelte:head>
-  <title>공식 근거 | Oh My Health Data</title>
-  <meta
-    name="description"
-    content="병무청 건강정보의 연구 활용, 가명정보 동의 예외, 보유기간과 정신건강 자료를 공식 문서와 함께 확인하세요. 2026년 10월 9일 확인."
-  />
-</svelte:head>
+<Seo page={SEO_PAGES.sources} />
 
 <main id="main" class="source-page">
   <div class="page-intro">

@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="4" fill="#eeff00"/>
-  <path fill="none" stroke="#141414" stroke-linecap="square" stroke-width="8" d="M12 34h11l6-15 9 28 6-13h8"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Oh My Health Data</title>
+  <path fill="#e5ff36" d="M0 0H64V64H0Z"/><g transform="translate(8 8) scale(1.0)">
+      <path d="M24 3V45M3 24H45M9 9L39 39M9 39L39 9" stroke="#1c211c" stroke-width="7" fill="none"/>
+      <path d="M19 19H29V29H19Z" fill="#f3f1e8"/>
+    </g>
 </svg>

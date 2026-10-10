@@ -4,6 +4,8 @@
   import YearCheck from '$lib/YearCheck.svelte';
   import SkillPromo from '$lib/SkillPromo.svelte';
   import Mark from '$lib/Mark.svelte';
+  import Seo from '$lib/Seo.svelte';
+  import { SEO_PAGES, absoluteUrl } from '$lib/seo';
   import { downloadPoster, type PosterTheme } from '$lib/poster';
 
   const demands = [
@@ -43,7 +45,7 @@
       text: topic === 'facts'
         ? '병무청이 2015~2024년 신검 데이터를 연구에 제공한다는 사실, 알고 있었나요? 어떤 정보가 쓰이는지 함께 확인해 보세요.'
         : '병무청 신검에서 낸 ' + current.lines.join(' ') + ' — Oh My Health Data',
-      url: window.location.origin + (topic === 'facts' ? '/#check' : '/#action')
+      url: absoluteUrl(topic === 'facts' ? '/#check' : '/#action')
     };
     try {
       if (navigator.share) await navigator.share(data);
@@ -53,13 +55,7 @@
   onMount(() => () => clearTimeout(toastTimer));
 </script>
 
-<svelte:head>
-  <title>병무청 신검, 내 기록도 연구에 쓰일까? — Oh My Health Data</title>
-  <meta name="description" content="2015~2024년 병무청 신검 데이터가 연구에 제공됩니다. 혈당·혈압·간염 검사까지. 신검 받은 연도와 공개된 제공 기간을 비교하고, 정보의 쓰임을 확인하세요." />
-  <meta property="og:title" content="병무청 신검, 내 기록도 연구에 쓰일까?" />
-  <meta property="og:description" content="2015~2024년 신검을 받았다면 확인하세요. 병무청이 공개한 연구 제공 항목과 보존기간, 그리고 내 선택권." />
-  <meta property="og:type" content="website" />
-</svelte:head>
+<Seo page={SEO_PAGES.home} />
 
 <main id="main">
   <section class="hero container" aria-labelledby="hero-title">

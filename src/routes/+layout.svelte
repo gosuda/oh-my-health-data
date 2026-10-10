@@ -1,7 +1,7 @@
 <script lang="ts">
   import '@fontsource-variable/noto-sans-kr';
-  import '@fontsource/barlow-condensed/700.css';
-  import '@fontsource/barlow-condensed/800.css';
+  import '@fontsource/barlow-condensed/latin-700.css';
+  import '@fontsource/barlow-condensed/latin-800.css';
   import '../app.css';
   import Mark from '$lib/Mark.svelte';
 
