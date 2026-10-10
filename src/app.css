@@ -967,18 +967,13 @@ a,button {
   line-height: .95;
   letter-spacing: -.015em;
 }
-.poster-label {
-  font-size: 9px;
-  letter-spacing: .09em;
-  margin-top: auto;
-  padding-top: 45px;
-}
 .poster-message {
   font-size: clamp(28px,3.15vw,45px);
   font-weight: 900;
   letter-spacing: -.07em;
   line-height: 1.42;
-  margin-top: 16px;
+  margin-top: auto;
+  padding-top: 45px;
   animation: stamp-in .22s ease-out;
 }
 .poster-message>span {
@@ -986,18 +981,13 @@ a,button {
 }
 .poster-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  text-align: right;
   align-items: flex-end;
   font-size: 9px;
   gap: 15px;
   padding-top: 35px;
   margin-top: auto;
-}
-.poster-bottom>span:last-child {
-  font-family: var(--display);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
 }
 .poster-tools {
   display: flex;
@@ -1660,18 +1650,14 @@ a,button {
     width: 25px;
     height: 25px;
   }
-  .poster-label {
+  .poster-message {
     padding-top: 40px;
-    font-size: 8px;
   }
   .poster-message {
     font-size: 3.5vw;
   }
   .poster-bottom {
     font-size: 7px;
-  }
-  .poster-bottom>span:last-child {
-    font-size: 13px;
   }
   .poster-tools {
     margin-top: 22px;
@@ -2065,8 +2051,7 @@ a,button {
     width: 29px;
     height: 29px;
   }
-  .poster-label {
-    font-size: 9px;
+  .poster-message {
     padding-top: 30px;
   }
   .poster-message {
@@ -2075,9 +2060,6 @@ a,button {
   .poster-bottom {
     font-size: 8px;
     padding-top: 30px;
-  }
-  .poster-bottom>span:last-child {
-    font-size: 15px;
   }
   .poster-tools {
     margin-top: 25px;

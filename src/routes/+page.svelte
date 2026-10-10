@@ -122,9 +122,8 @@
         <div class="poster-workspace">
           <div class="poster-preview" data-theme={selected} aria-live="polite" aria-label="선택한 요구 포스터">
             <div class="poster-top"><span>OH MY<br />HEALTH DATA.</span><Mark size={32} /></div>
-            <span class="poster-label">이것이 나의 요구입니다.</span>
             {#key selected}<h3 class="poster-message">{#each current.lines as line}<span>{line}</span>{/each}</h3>{/key}
-            <div class="poster-bottom"><span>병무청 건강정보 캠페인</span><span>MY DATA.<br />MY SAY.</span></div>
+            <div class="poster-bottom"><span>oh-my-health-data.com</span></div>
           </div>
           <div class="poster-tools"><button onclick={savePoster} disabled={exporting}><span aria-hidden="true">↓</span> {exporting ? '저장하는 중' : '포스터 저장'}</button><button onclick={() => shareCampaign()}><span aria-hidden="true">↗</span> 내 요구 공유</button></div>
         </div>

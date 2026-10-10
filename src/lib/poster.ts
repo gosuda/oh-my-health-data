@@ -65,7 +65,7 @@ export async function downloadPoster(theme: PosterTheme): Promise<void> {
 			'공개 · 보존 · 선택',
 			'내 정보에 대한 결정권을 요구합니다.',
 			'OH MY HEALTH DATA',
-			'병무청 건강정보 캠페인'
+			'oh-my-health-data.com'
 		].join('');
 		await Promise.allSettled([
 			document.fonts.load('900 124px "Noto Sans KR Variable"', text),
@@ -108,7 +108,8 @@ export async function downloadPoster(theme: PosterTheme): Promise<void> {
 	context.fillStyle = ink;
 	context.fillRect(inset, 1043, width - inset * 2, 2);
 	drawText(context, 'OH MY HEALTH DATA', inset, 1156, 55, 900, ink);
-	drawText(context, '병무청 건강정보 캠페인', inset, 1226, 32, 700, ink);
+	context.textAlign = 'right';
+	drawText(context, 'oh-my-health-data.com', width - inset, 1226, 32, 700, ink);
 
 	const blob = await new Promise<Blob>((resolve, reject) => {
 		canvas.toBlob((result) => {
