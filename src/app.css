@@ -812,7 +812,7 @@ a,button {
 }
 .consent-art-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   font-family: var(--display);
   font-size: 17px;
@@ -1109,14 +1109,6 @@ a,button {
 .footer-top>.brand {
   font-size: 23px;
 }
-.footer-top>p {
-  font-size: 15px;
-  line-height: 1.8;
-  letter-spacing: -.035em;
-}
-.footer-top strong {
-  font-weight: 700;
-}
 .footer-links {
   display: grid;
   gap: 13px;
@@ -1133,11 +1125,6 @@ a,button {
   padding-block: 20px;
   font-size: 9px;
   color: var(--muted);
-}
-.footer-bottom>span:last-child {
-  font-family: var(--display);
-  font-size: 11px;
-  letter-spacing: .08em;
 }
 .letter-dialog {
   background: var(--paper);
@@ -1715,9 +1702,6 @@ a,button {
   .footer-bottom {
     font-size: 8px;
   }
-  .footer-bottom>span:last-child {
-    font-size: 9px;
-  }
 }
 @media(max-width:560px) {
   html {
@@ -2147,16 +2131,12 @@ a,button {
   }
   .footer-top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 25px;
     padding-bottom: 30px;
   }
   .footer-top .brand {
     font-size: 20px;
-  }
-  .footer-top>p {
-    font-size: 12px;
-    line-height: 1.8;
   }
   .footer-links {
     grid-column: 1/-1;
@@ -2169,9 +2149,6 @@ a,button {
     gap: 9px;
     padding-block: 17px;
     font-size: 8px;
-  }
-  .footer-bottom>span:last-child {
-    font-size: 10px;
   }
   .letter-dialog {
     padding: 21px;
@@ -2280,7 +2257,6 @@ a.hero-footnote:hover {
   font-weight: 850;
   letter-spacing: -.065em;
   line-height: 1.4;
-  margin-top: 16px;
 }
 .spread-inner p:last-child {
   margin-top: 15px;
@@ -2348,14 +2324,6 @@ a.hero-footnote:hover {
 .footer-links .repo-button:hover {
   background: var(--acid);
   text-decoration: none;
-}
-.footer-repo-url {
-  font-size: 10px;
-  overflow-wrap: anywhere;
-}
-.footer-repo-url:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 @media (max-width: 800px) {
   .footer-top { flex-wrap: wrap; }

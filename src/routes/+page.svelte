@@ -75,7 +75,7 @@
   <section id="story" class="story-section section-pad">
     <div class="container">
       <div class="section-intro"><p class="eyebrow"><span class="section-number">01</span> 신검 그 이후</p></div>
-      <div class="section-heading"><h2>신검 때 냈던 정보.<br /><span class="underlined">지금은 연구 자료입니다.</span></h2><p>피 뽑고, 시력 재고, 엑스레이 찍던 그날.<br />병무청은 그 검사 정보를 이렇게 활용합니다.</p></div>
+      <div class="section-heading"><h2>신검 때 냈던 정보.<br /><span class="underlined">지금은 연구 자료입니다.</span></h2></div>
       <div class="fact-grid">
         <article class="fact-panel fact-research">
           <div class="fact-top"><span class="tag">의학 연구</span><span class="fact-index">01 / 03</span></div>
@@ -93,21 +93,20 @@
           <h3>기록에 적힌 두 글자.<br />‘영구’.</h3><p>서울·대전충남·전북지방병무청의<br />‘병역판정검사 수검자 파일’은<br />영구 보유로 등록되어 있습니다.</p><a href="/sources/#retention" class="source-link">개인정보파일 등록 보기 <span>↗</span></a>
         </article>
       </div>
-      <p class="story-note">내가 낸 건강정보. 어디에 쓰이고 언제 지워지는지, 나도 알아야 합니다.</p>
     </div>
   </section>
 
   <section class="consent-section section-pad" aria-labelledby="consent-title">
     <div class="container consent-grid">
       <div><p class="eyebrow"><span class="section-number">02</span> 신검은 받았는데, 연구 동의는?</p><h2 id="consent-title">피는 내가 뽑았는데,<br /><span>선택은 누가 하나요?</span></h2><p class="consent-description">현행법은 과학적 연구 등을 위한 가명정보 처리를<br class="desktop-break" /> <strong>개별 동의 없이</strong> 허용합니다.</p><p class="consent-appeal">병역판정을 위해 의무적으로 낸 건강정보.<br />연구에 쓰이는 과정에는 내 선택도 있어야 합니다.</p><a href="/sources/#consent" class="source-link light-source">개인정보 보호법 제28조의2 <span>↗</span></a></div>
-      <div class="consent-art" aria-hidden="true"><div class="consent-art-label">WHO GETS TO DECIDE?</div><div class="consent-question">?</div><div class="consent-art-bottom"><span>MY BODY<br />MY DATA</span><span class="outline-arrow">↗</span></div><div class="consent-tape">선택권을 보장하라.</div></div>
+      <div class="consent-art" aria-hidden="true"><div class="consent-art-label">WHO GETS TO DECIDE?</div><div class="consent-question">?</div><div class="consent-art-bottom"><span class="outline-arrow">↗</span></div><div class="consent-tape">선택권을 보장하라.</div></div>
     </div>
   </section>
 
   <section id="action" class="action-section section-pad" aria-labelledby="action-title">
     <div class="container">
       <div class="section-intro"><p class="eyebrow"><span class="section-number">03</span> 이제, 우리의 목소리</p></div>
-      <div class="section-heading action-heading"><h2 id="action-title">병무청에 묻겠습니다.<br /><span class="highlight">내 정보, 어떻게 썼습니까?</span></h2><p>공개·삭제 기준·선택권.<br />내가 가장 먼저 답받고 싶은 것을 고르세요.</p></div>
+      <div class="section-heading action-heading"><h2 id="action-title">병무청에 묻겠습니다.<br /><span class="highlight">내 정보, 어떻게 썼습니까?</span></h2></div>
       <div class="action-grid">
         <div class="demand-controls">
           <fieldset><legend class="sr-only">가장 강조할 요구 선택</legend>
@@ -137,7 +136,7 @@
 
   <SkillPromo />
 
-  <section class="spread-section" aria-labelledby="spread-title"><div class="container spread-inner"><div><p class="eyebrow">신검 받은 친구에게도</p><h2 id="spread-title">같이 신검 받은 친구는,<br />이 사실을 알고 있을까요?</h2><p>어떤 건강정보가 쓰이는지, 우리도 알아야 합니다.</p></div><button class="button button-dark" onclick={() => shareCampaign('facts')}>신검 받은 친구에게 알리기 <span aria-hidden="true">↗</span></button></div></section>
+  <section class="spread-section" aria-labelledby="spread-title"><div class="container spread-inner"><div><h2 id="spread-title">같이 신검 받은 친구는,<br />이 사실을 알고 있을까요?</h2><p>어떤 건강정보가 쓰이는지, 우리도 알아야 합니다.</p></div><button class="button button-dark" onclick={() => shareCampaign('facts')}>신검 받은 친구에게 알리기 <span aria-hidden="true">↗</span></button></div></section>
 
   <section class="evidence-banner"><div class="container"><div><h2>근거도, 함께 엽니다.</h2><p>병무청의 처리방침부터 데이터 목록과 법령까지.<br />이 캠페인의 주장을 뒷받침하는 공식 자료를 확인하세요.</p></div><a href="/sources/" class="evidence-arrow" aria-label="공식 근거 페이지로 이동">↗</a></div></section>
 </main>

@@ -28,7 +28,6 @@
 <footer class="site-footer">
   <div class="container footer-top">
     <a href="/" class="brand" aria-label="Oh My Health Data 홈"><Mark /><span>OH MY<br />HEALTH DATA.</span></a>
-    <p>내 몸의 정보.<br /><strong>내 선택도 있어야 한다.</strong></p>
     <div class="footer-links">
       <a href="/sources/">공식 자료 보기 ↗</a>
       <a href="/#action">나의 요구 만들기 ↗</a>
@@ -36,5 +35,5 @@
       <a class="repo-button" href="https://github.com/gosuda/oh-my-health-data" target="_blank" rel="noopener noreferrer"><img src="/github-mark.svg" alt="" width="21" height="21" /><span>웹 사이트 소스코드와 자료 공개</span><span aria-hidden="true">↗</span></a>
     </div>
   </div>
-  <div class="container footer-bottom"><span>자유 오픈소스 소프트웨어 커뮤니티 <strong>gosuda</strong>에서 제작한 시민 캠페인</span><a class="footer-repo-url" href="https://github.com/gosuda/oh-my-health-data" target="_blank" rel="noopener noreferrer">github.com/gosuda/oh-my-health-data ↗</a></div>
+  <div class="container footer-bottom"><span>자유 오픈소스 소프트웨어 커뮤니티 <strong>gosuda</strong>에서 제작한 시민 캠페인</span></div>
 </footer>
