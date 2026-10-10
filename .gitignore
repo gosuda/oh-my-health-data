@@ -1,0 +1,11 @@
+node_modules/
+.svelte-kit/
+build/
+.vite/
+.env
+.env.*
+!.env.example
+.DS_Store
+npm-debug.log*
+/docs/CAMPAIGN_PLAN.md
+/static/downloads/mma-health-data.zip

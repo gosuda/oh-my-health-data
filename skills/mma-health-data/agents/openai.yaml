@@ -1,0 +1,4 @@
+interface:
+  display_name: "병무청 건강정보 민원"
+  short_description: "병무청 건강정보의 제공·보존·삭제를 묻는 민원 작성과 접수 지원"
+  default_prompt: "$mma-health-data를 사용해 병무청에 건강정보 제공 내역과 보존·삭제 기준을 묻는 청구서를 준비해 줘."

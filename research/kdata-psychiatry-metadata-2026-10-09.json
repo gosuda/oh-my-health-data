@@ -1,0 +1,103 @@
+{
+  "observed_at": "2026-10-09",
+  "source_url": "https://dsz.kdata.or.kr/member/apply/add/data_detail.do?dataId=MMA_016",
+  "search_url": "https://dsz.kdata.or.kr/svc/data/search.do?keyword=%EC%A0%95%EC%8B%A0%EA%B1%B4%EA%B0%95%EC%9D%98%ED%95%99%EA%B3%BC",
+  "source_format": "unauthenticated public metadata JSON linked from catalog",
+  "id": "MMA_016",
+  "title": "정신건강의학과 부령별 처분현황",
+  "provider": "병무청",
+  "registered": "2025-06-26 18:00",
+  "updated": "2025-06-26 18:00",
+  "description": "'23년도 병무청 정신질환(부령코드)별 병역처분 현황",
+  "description_detail": "[개요]\nㅇ ‘23년도 병무청 정신질환(부령코드)별 병역처분 현황\n\n[특징]\nㅇ 용량 : 1.4MB\nㅇ 데이터 건수 : 15,994 건\n\n[활용사례]\nㅇ 활용목적: '25년 병무청·방사청·질병청 합동 데이터분석 및 아이디어 공모전 출품",
+  "file_name": "TB_MMA_PSYCHIATRY.csv",
+  "field_count": 11,
+  "fields": [
+    {
+      "name": "SN",
+      "label": "연번",
+      "type": "NUMBER",
+      "length": 5,
+      "order": 1
+    },
+    {
+      "name": "BR_CD",
+      "label": "부령코드",
+      "type": "NUMBER",
+      "length": 4,
+      "order": 2
+    },
+    {
+      "name": "BR_JH",
+      "label": "부령조항",
+      "type": "VARCHAR",
+      "length": 10,
+      "order": 3
+    },
+    {
+      "name": "DISEASENM",
+      "label": "질병명",
+      "type": "VARCHAR",
+      "length": 300,
+      "order": 4
+    },
+    {
+      "name": "AGEGROUP",
+      "label": "연령대",
+      "type": "VARCHAR",
+      "length": 5,
+      "order": 5
+    },
+    {
+      "name": "SIDO",
+      "label": "시도",
+      "type": "VARCHAR",
+      "length": 6,
+      "order": 6
+    },
+    {
+      "name": "GRADE3",
+      "label": "3급",
+      "type": "NUMBER",
+      "length": 1,
+      "order": 7
+    },
+    {
+      "name": "GRADE4",
+      "label": "4급",
+      "type": "NUMBER",
+      "length": 1,
+      "order": 8
+    },
+    {
+      "name": "GRADE5",
+      "label": "5급",
+      "type": "NUMBER",
+      "length": 1,
+      "order": 9
+    },
+    {
+      "name": "GRADE6",
+      "label": "6급",
+      "type": "NUMBER",
+      "length": 1,
+      "order": 10
+    },
+    {
+      "name": "GRADE7",
+      "label": "7급",
+      "type": "NUMBER",
+      "length": 1,
+      "order": 11
+    }
+  ],
+  "notes": [
+    "HCDL MMA_BYPJ와 별도 데이터셋이다.",
+    "공식 응답에 공개 샘플 10행이 있으며 질병명, 부령코드, 부령조항, 연령대 일부가 별표로 마스킹되어 있음. 이 정리파일에는 개인별 샘플행을 복사하지 않음.",
+    "원자료의 실제 연구 제공 이력, 재식별 방지 수준, 보유기간은 이 카탈로그 메타데이터만으로 확인 불가.",
+    "3~7급은 별도 숫자컬럼으로 등록되어 있음. 전체 15,994건을 고유인원수로 단정하지 않음.",
+    "공식 검색결과에서 서울 및 대전센터 대상으로 표시되고 안심구역 이용신청 안내가 제공됨.",
+    "메타데이터는 데이터 건수 15,994건이라고만 하며 개인 단위 또는 집계 단위인지 명시하지 않음. 공개 샘플에는 각 행의 특정 등급 컬럼이 1로 표시되지만 이 사실만으로 전체 원자료를 개인별 진단기록이라고 확정할 수 없음.",
+    "질병명 필드가 존재한다는 사실과 실제 개별 진료기록 원문을 연구기관에 제공했다는 주장은 별개이며 후자는 확인되지 않음."
+  ]
+}

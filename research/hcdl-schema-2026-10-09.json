@@ -1,0 +1,470 @@
+{
+  "observed_at": "2026-10-09",
+  "access": "비로그인 공개 카탈로그 메타데이터; 원자료 취득 아님",
+  "datasets": [
+    {
+      "id": "MMA_BASE",
+      "label": "신체검사기본항목",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BASE/H0014",
+      "field_count": 8,
+      "fields": [
+        {
+          "name": "BIRTH",
+          "label": "생년(YYYY)",
+          "description": "ex) 1996 ~ 2005",
+          "type": "숫자",
+          "length": 4,
+          "code": "-"
+        },
+        {
+          "name": "BMI",
+          "label": "체질량지수",
+          "description": "ex) 14.1 ~ 48.9",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "GEOMSA_DT",
+          "label": "검사연도(YYYY)",
+          "description": "ex) 2023",
+          "type": "숫자",
+          "length": 4,
+          "code": "-"
+        },
+        {
+          "name": "HEIGHT",
+          "label": "신장",
+          "description": "ex) 153.1 ~ 195.6",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "JBCEONG",
+          "label": "검사반(지역별 지방청검사장)",
+          "description": "ex) 경기북부, 부산.울산, 충북, 대전.충남, 대구.경북",
+          "type": "문자",
+          "length": 20,
+          "code": "-"
+        },
+        {
+          "name": "LEFT_SIGHT",
+          "label": "시력좌",
+          "description": "ex) 0.1 ~ 2",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "RIGHT_SIGHT",
+          "label": "시력우",
+          "description": "ex) 0.1 ~ 2",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "WEIGHT",
+          "label": "체중",
+          "description": "ex) 38.6 ~ 168.8",
+          "type": "문자",
+          "length": 100,
+          "code": "-"
+        }
+      ]
+    },
+    {
+      "id": "MMA_BYPJ",
+      "label": "병역판정검사결과",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BYPJ/H0014",
+      "field_count": 48,
+      "fields": [
+        {
+          "name": "ALT",
+          "label": "간세포내에 존재하는 효소(알라닌아미노전이효소)",
+          "description": "ex) 12",
+          "type": "숫자",
+          "length": 5,
+          "code": "-"
+        },
+        {
+          "name": "ANTIHCV",
+          "label": "C형 간염(Anti-HCV, 항체)",
+          "description": "ex) 음성 or null값",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "AST",
+          "label": "간,근육세포, 적혈구내에 존재하는 효소(아스파테이트아미노전이효소)",
+          "description": "ex) 20",
+          "type": "숫자",
+          "length": 5,
+          "code": "-"
+        },
+        {
+          "name": "BASO",
+          "label": "호염구(Basophil, BASO)",
+          "description": "ex) 0.2, 1.2",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "BIL",
+          "label": "요빌리루빈(Bilirubine)",
+          "description": "ex) 1+, 2+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "BIRTH",
+          "label": "생년(YYYY)",
+          "description": "ex) 1996 ~ 2005",
+          "type": "숫자",
+          "length": 4,
+          "code": "-"
+        },
+        {
+          "name": "BR_CD",
+          "label": "부령코드",
+          "description": "ex) 1139, 1043",
+          "type": "문자",
+          "length": 15,
+          "code": "-"
+        },
+        {
+          "name": "BR_JH",
+          "label": "부령조항과",
+          "description": "ex) 내과, 신경과, 정신건강의학과, 피부과, 외과, 정형외과, 신경외과, 흉부외과, 성형외과, 안과, 이비인후과, 비뇨의학과, 치과",
+          "type": "문자",
+          "length": 20,
+          "code": "-"
+        },
+        {
+          "name": "BSSGJSYEOBU",
+          "label": "잠복결핵 방사선 검사",
+          "description": "ex) 정상 or 이상",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "BUN",
+          "label": "요소질소(BUN)",
+          "description": "ex) 9.1, 16.9",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "CHOLESTEROL",
+          "label": "콜레스테롤",
+          "description": "ex) 119",
+          "type": "숫자",
+          "length": 5,
+          "code": "-"
+        },
+        {
+          "name": "CREATININE",
+          "label": "크레아틴",
+          "description": "ex) 0.8, 1.08",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "CUK_L",
+          "label": "축_좌",
+          "description": "ex) 1, 178",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "CUK_R",
+          "label": "축_우",
+          "description": "ex) 3, 175",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "EOSI",
+          "label": "호산구(Eosinophil, EOSI)",
+          "description": "ex) 0.7, 5.2",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "GEOMSA_YM",
+          "label": "검사년월(YYYYMM)",
+          "description": "ex) 202302",
+          "type": "숫자",
+          "length": 6,
+          "code": "-"
+        },
+        {
+          "name": "GLU",
+          "label": "요당(GLU_당뇨)",
+          "description": "ex) 생략, 1+, 4+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "GLUCOSE",
+          "label": "혈당",
+          "description": "ex) 137",
+          "type": "숫자",
+          "length": 5,
+          "code": "-"
+        },
+        {
+          "name": "GUMYEON_L",
+          "label": "구면치_좌",
+          "description": "ex) -2.5, -10.25",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "GUMYEON_R",
+          "label": "구면치_우",
+          "description": "ex) -2.5, -9.5",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "HAIWANGI",
+          "label": "혈압 이완기",
+          "description": "ex) 56, 95",
+          "type": "숫자",
+          "length": 3,
+          "code": "-"
+        },
+        {
+          "name": "HASUCHUKGI",
+          "label": "혈압 수축기",
+          "description": "ex) 98, 153",
+          "type": "숫자",
+          "length": 3,
+          "code": "-"
+        },
+        {
+          "name": "HB",
+          "label": "헤모글로빈(Hemoglobin, HB)",
+          "description": "ex) 14.9, 16.4",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "HBSAG",
+          "label": "B형_HBS Ag 검사 결과",
+          "description": "ex) 0.474",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "HCT",
+          "label": "적혈구 용적율(Hematocrit, HCT)",
+          "description": "ex) 44.8, 51.4",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "HEIGHT",
+          "label": "신장",
+          "description": "ex) 153.1 ~ 195.6",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "JBCEONG",
+          "label": "지방청명",
+          "description": "ex) 경기북부, 부산.울산, 충북, 대전.충남, 대구.경북",
+          "type": "문자",
+          "length": 20,
+          "code": "-"
+        },
+        {
+          "name": "KET",
+          "label": "요케톤(Ketone)",
+          "description": "ex) 1+, 4+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "LYMP",
+          "label": "림프구(Lymphocyte, LYMP)",
+          "description": "ex) 21, 46.3",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "MONO",
+          "label": "단구(Monocyte, MONO)",
+          "description": "ex) 3.4, 7.8",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "NEUT",
+          "label": "호중구(Neutrophil, NEUT)",
+          "description": "ex) 50.2, 69.5",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "NIT",
+          "label": "요아질산염(Nitrite)",
+          "description": "ex) 2+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "OB",
+          "label": "요잠혈(Occult hematuria)",
+          "description": "ex) 생략, 1+, 3+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "PH",
+          "label": "요산도(PH)",
+          "description": "ex) 5.5, 7.0",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "PLT",
+          "label": "혈소판(Platelet, PLT)",
+          "description": "ex) 194, 348",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "PRO",
+          "label": "요단백(Protein)",
+          "description": "ex) 생략, 1+, 3+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "RGTP",
+          "label": "글루타민산 펩타이드 전이효소(알콜성간질환)",
+          "description": "ex) 14, 58, 135",
+          "type": "숫자",
+          "length": 5,
+          "code": "-"
+        },
+        {
+          "name": "SAKGAK_YN",
+          "label": "색각여부",
+          "description": "정상 or 색약",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "SG",
+          "label": "요비중(SG)",
+          "description": "ex) 1.010, 1.037",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "SIRYEOK_L",
+          "label": "시력좌",
+          "description": "ex) 0.4, 1.2",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "SIRYEOK_R",
+          "label": "시력우",
+          "description": "ex) 0.1, 2",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "TG",
+          "label": "중성지방(Triglyceride, TG)",
+          "description": "ex) 36, 104, 234",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "URO",
+          "label": "요유로빌리노젠(Urobilinogen)",
+          "description": "ex) 1+, 0.1",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "WBC",
+          "label": "백혈구(White Bood Cell, WBC)",
+          "description": "ex) 5.52, 6.33",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "WBC2",
+          "label": "요백혈구(WBC)",
+          "description": "ex) 1+, 3+",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "WEIGHT",
+          "label": "체중",
+          "description": "ex) 38.6 ~ 168.8",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "WONJUCI_L",
+          "label": "원주치_좌",
+          "description": "ex) -0.75, -4.25",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        },
+        {
+          "name": "WONJUCI_R",
+          "label": "원주치_우",
+          "description": "ex) -0.25, -3.75",
+          "type": "문자",
+          "length": 10,
+          "code": "-"
+        }
+      ]
+    }
+  ]
+}

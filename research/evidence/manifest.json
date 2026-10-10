@@ -1,0 +1,41 @@
+{
+  "captured_on": "2026-10-09",
+  "contents": "공개 데이터 카탈로그 UI; 개인별 검사 원자료가 아님",
+  "files": [
+    {
+      "path": "mma-hcdl-base.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BASE/H0014",
+      "sha256": "07fa32f55fd7797fc0d57328255a82ee0f36e66dca53347f2d979089ab09401f"
+    },
+    {
+      "path": "mma-hcdl-bypj-page1.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BYPJ/H0014",
+      "sha256": "8960fedd015f1a6072ca282126e8962709868cc687e078a5517f65b12b8a6b8c"
+    },
+    {
+      "path": "mma-hcdl-bypj-page2.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BYPJ/H0014",
+      "sha256": "439eeebda99cbbf5adbd38cb35b216a292f5cd41e27cd17320d6e8145f90f247"
+    },
+    {
+      "path": "mma-hcdl-bypj-page3.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BYPJ/H0014",
+      "sha256": "915abb5b330a62a798ab99eff79cf7a8ceafb1ff61a807b4ef36844a791d3489"
+    },
+    {
+      "path": "mma-hcdl-bypj-page4.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BYPJ/H0014",
+      "sha256": "6bf30f7d67419cf224643ee87a57706abd398fb555e77e2fada98050182f05ad"
+    },
+    {
+      "path": "mma-hcdl-bypj-page5.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/catalog/detail/Y/MMA_BYPJ/H0014",
+      "sha256": "5d05ccb5d30f8db3f1a2b67e2cbbecbc7a22148e0871a2d484b1d5e23d7ef37c"
+    },
+    {
+      "path": "mma-hcdl-intro.jpg",
+      "source_url": "https://hcdl.mohw.go.kr/static/cat/catalogIntro",
+      "sha256": "febca77f1db4a3b6b9f4d7c90ce793387bd1fa1df903922d17a0723bdda0779c"
+    }
+  ]
+}

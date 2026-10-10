@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "checked_on": "2026-10-09",
+  "timezone": "Asia/Seoul",
+  "scope": "공개된 기관 문서, 법령, 데이터 카탈로그와 보도 검증. 개인별 건강 원자료는 취득하지 않음.",
+  "sources": [
+    {
+      "id": "mma-policy",
+      "title": "병무청 개인정보 처리방침 제12항·제14항·제15항",
+      "url": "https://www.mma.go.kr/contents.do?mc=usr0000283",
+      "publication_or_effective_date": "2026-08-20",
+      "checked_on": "2026-10-09",
+      "verification_method": "공식 웹 본문"
+    },
+    {
+      "id": "flatfoot-catalog",
+      "title": "병무청 Kdata 평발 측정 의료영상정보(PACS) 이미지 파일",
+      "url": "https://www.data.go.kr/data/15146899/fileData.do",
+      "publication_or_effective_date": "2025-08-21",
+      "checked_on": "2026-10-09",
+      "verification_method": "공식 웹 본문; 수정일 2025-11-10"
+    },
+    {
+      "id": "exam-rule",
+      "title": "병역판정검사 규정 제23조·제55조",
+      "url": "https://www.law.go.kr/admRulInfoP.do?admRulSeq=2100000272256",
+      "publication_or_effective_date": "2026-01-08",
+      "checked_on": "2026-10-09",
+      "verification_method": "공식 동적 본문의 공개 HTTP 응답 직접 확인"
+    },
+    {
+      "id": "pipa-research",
+      "title": "개인정보 보호법 제28조의2~5",
+      "url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1020398635",
+      "publication_or_effective_date": "2026-09-11",
+      "checked_on": "2026-10-09",
+      "verification_method": "국가법령정보센터 현행본"
+    },
+    {
+      "id": "pipa-rights",
+      "title": "개인정보 보호법 제28조의7",
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1020398611",
+      "publication_or_effective_date": "2026-09-11",
+      "checked_on": "2026-10-09",
+      "verification_method": "국가법령정보센터 현행본"
+    },
+    {
+      "id": "military-medical",
+      "title": "병역법 제11조의2",
+      "url": "https://www.law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1000459255",
+      "publication_or_effective_date": "2026-10-02",
+      "checked_on": "2026-10-09",
+      "verification_method": "국가법령정보센터 현행본"
+    },
+    {
+      "id": "pif-seoul",
+      "title": "서울지방병무청 병역판정검사 수검자 파일 공개등록",
+      "url": "https://www.privacy.go.kr/wcp/pif/sch/personalInfoFileViewPopup.do?prsnInfoFileId=PIF_000000000429577",
+      "publication_or_effective_date": null,
+      "checked_on": "2026-10-09",
+      "verification_method": "공개 HTTP 응답 직접 확인; 갱신일 미표시"
+    },
+    {
+      "id": "pif-daejeon",
+      "title": "대전충남지방병무청 병역판정검사 수검자 파일 공개등록",
+      "url": "https://www.privacy.go.kr/wcp/pif/sch/personalInfoFileViewPopup.do?prsnInfoFileId=PIF_000000000429298",
+      "publication_or_effective_date": null,
+      "checked_on": "2026-10-09",
+      "verification_method": "공개 HTTP 응답 직접 확인; 갱신일 미표시"
+    },
+    {
+      "id": "pif-jeonbuk",
+      "title": "전북지방병무청 병역판정검사 수검자 파일 공개등록",
+      "url": "https://www.privacy.go.kr/wcp/pif/sch/personalInfoFileViewPopup.do?prsnInfoFileId=PIF_000000000429808",
+      "publication_or_effective_date": null,
+      "checked_on": "2026-10-09",
+      "verification_method": "공개 HTTP 응답 직접 확인; 갱신일 미표시"
+    },
+    {
+      "id": "archives-case",
+      "title": "2021년 기록관리 기관평가 우수 중점 추진사례",
+      "url": "https://www.archives.go.kr/next/common/downloadBoardFile.do?board_file_seq=2&board_seq=101576",
+      "publication_or_effective_date": "2022-01",
+      "checked_on": "2026-10-09",
+      "verification_method": "국가기록원 PDF 본문 69~74쪽, PACS 표 73~74쪽"
+    }
+  ],
+  "disclosed_research_uses": [
+    {
+      "id": "khis-2025",
+      "sources": [
+        "mma-policy"
+      ],
+      "recipient": "한국보건의료정보원 보건의료 빅데이터 플랫폼",
+      "purpose": "타기관 의료데이터와 결합 연구",
+      "source_years": {
+        "from": 2015,
+        "to": 2024
+      },
+      "processing_period": {
+        "start": "2025-09-08",
+        "end": "2026-12-31"
+      },
+      "tables": [
+        {
+          "label": "신체검사기본항목",
+          "columns": 8,
+          "rows": 2820977
+        },
+        {
+          "label": "병역판정검사결과",
+          "columns": 45,
+          "rows": 2745820
+        }
+      ],
+      "unique_people": null,
+      "limitations": [
+        "rows를 고유 인원수로 바꾸지 않음",
+        "두 표의 중복을 알 수 없으므로 인원 합산 불가",
+        "현재 카탈로그의 8+48열과 당시 제공분의 동일성은 미확인",
+        "별표에 성명·생년월일·주민등록 뒤 첫자리 표기가 있으나 이 표만으로 비가명 식별자를 그대로 제공했다고 해석하지 않음"
+      ]
+    },
+    {
+      "id": "kdata-flatfoot",
+      "sources": [
+        "mma-policy",
+        "flatfoot-catalog"
+      ],
+      "recipient": "한국데이터산업진흥원 데이터안심구역",
+      "purpose": "평발 영상 기반 인공지능 학습 모델 생성 연구",
+      "processing_period": {
+        "start": "2025-08-21",
+        "end": "2026-12-31",
+        "extension_label_present": true,
+        "previous_end_date": null
+      },
+      "source_period": {
+        "start": "2022-01",
+        "end": "2024-06"
+      },
+      "people": 507,
+      "images": 1014,
+      "format": "DICOM",
+      "access_locations": [
+        "K-data 데이터안심구역 서울/대전",
+        "충남대학교병원 의료데이터안심활용센터"
+      ],
+      "published_deidentification": "성명·병적번호를 특수문자($)로 대체; 표본추출과 폐쇄분석환경",
+      "limitations": [
+        "구체적 최종 연구수행기관·성과·모델 배포 상태는 미확인",
+        "기관이 설명한 가명처리 조치이며 안전성을 독립 감사한 결과가 아님",
+        "안심구역 열람을 전체 인터넷 공개로 해석하지 않음"
+      ]
+    },
+    {
+      "id": "military-healthcare-2026",
+      "sources": [
+        "mma-policy"
+      ],
+      "recipient": "국군의무사령부",
+      "purpose": "군 장병 의료이용 행태 분석",
+      "processing_period": {
+        "start": "2026-05-21",
+        "end": "2026-12-31"
+      },
+      "fields": [
+        "출생년도",
+        "나이",
+        "신장",
+        "체중"
+      ],
+      "rows": null,
+      "people": null,
+      "source_years": null
+    }
+  ],
+  "retention": [
+    {
+      "id": "pif-retention",
+      "sources": [
+        "pif-seoul",
+        "pif-daejeon",
+        "pif-jeonbuk"
+      ],
+      "data_type": "병역판정검사 수검자 파일",
+      "published_period": "영구",
+      "status": "verified_public_registry",
+      "limits": "공개등록 값. 세부 임상검사·의료영상·스캔본·백업 전체의 영구보유를 뜻하지 않으며 등록 갱신일 미표시."
+    },
+    {
+      "id": "normal-chest",
+      "sources": [
+        "exam-rule"
+      ],
+      "data_type": "정상자의 흉부촬영 영상",
+      "published_period": "1년",
+      "article": "제23조 제10항",
+      "disposal": "보관 후 다음연도 1월 30일까지 공공기록물 관리에 관한 법률 제27조에 따라 폐기",
+      "status": "verified_rule",
+      "limits": "개별 영상의 실제 삭제 이행·백업과 예외는 미확인"
+    },
+    {
+      "id": "other-images",
+      "sources": [
+        "exam-rule"
+      ],
+      "data_type": "그 밖의 자체 및 외부 의료영상",
+      "published_period": "10년",
+      "article": "제23조 제10항",
+      "storage": "PACS 또는 CD 등",
+      "disposal": "보관 후 다음연도 1월 30일까지 공공기록물 관리에 관한 법률 제27조에 따라 폐기",
+      "status": "verified_rule",
+      "limits": "행정시스템의 별도 기록·중앙검사소 사본·백업과 적용 관계는 별도 확인"
+    },
+    {
+      "id": "paper-records",
+      "sources": [
+        "exam-rule"
+      ],
+      "data_type": "병무용진단서 등 질병 관련 자료와 이미지 등록이 곤란한 자료의 묶음",
+      "published_period": "10년",
+      "article": "제55조 제2항",
+      "status": "verified_rule",
+      "limits": "같은 조의 스캔 등록 의무가 전산 스캔본 전체의 동일 삭제시점까지 명확히 규정하는지는 별도 확인"
+    },
+    {
+      "id": "historic-pacs",
+      "sources": [
+        "archives-case"
+      ],
+      "data_type": "대전충남지방병무청 과거 PACS 기록관리 사례",
+      "published_period": "10년 보존 + 20년 처분 제약을 합친 30년 운영",
+      "case_year": 2020,
+      "status": "historical_case",
+      "limits": "2022년 1월 발간된 2021년 기관평가 사례. 2026 전국 공통 규칙으로 일반화하거나 현행 규정 위반을 추정하지 않음."
+    },
+    {
+      "id": "research-period",
+      "sources": [
+        "mma-policy"
+      ],
+      "data_type": "처리방침 제12항의 연구용 가명정보",
+      "published_period": "2026-12-31까지",
+      "status": "verified_policy",
+      "limits": "원본·백업·모델·논문 등 파생물의 공통 삭제일 아님. 평발 건에는 연장 표시가 있으나 이전 종료일·승인 내역은 미확인"
+    },
+    {
+      "id": "processing-log",
+      "sources": [
+        "pipa-research"
+      ],
+      "data_type": "가명정보 처리에 관한 기록",
+      "published_period": "가명정보 파기 후 3년 이상",
+      "article": "제28조의4",
+      "status": "verified_statute",
+      "limits": "가명정보 자체 또는 원본을 동일 기간 유지한다는 뜻이 아님"
+    }
+  ],
+  "rights": [
+    {
+      "id": "without-consent",
+      "sources": [
+        "pipa-research"
+      ],
+      "status": "verified_statute_with_conditions",
+      "claim": "제28조의2는 통계작성·과학적 연구·공익적 기록보존 등을 위한 가명정보 처리를 동의 없이 허용한다.",
+      "limits": "개별 사업이 모든 요건을 충족했는지는 별도 문제. 제공 시 식별정보 제한과 재식별 금지·안전조치 의무가 적용됨."
+    },
+    {
+      "id": "pseudonym-rights",
+      "sources": [
+        "pipa-rights"
+      ],
+      "status": "verified_statute_with_conditions",
+      "claim": "해당 가명정보에는 제35조, 제35조의2, 제36조, 제37조 등의 적용이 제외된다.",
+      "limits": "일반적인 열람·삭제·처리정지 특례에 관한 설명. 원본에 대한 모든 권리가 없어지거나 기관의 자율적 장래 제외 수용, 위법 처리 구제가 금지된다는 뜻은 아님."
+    },
+    {
+      "id": "acquired-medical-purpose",
+      "sources": [
+        "military-medical"
+      ],
+      "status": "verified_statute_application_unresolved",
+      "claim": "제11조의2 제1항에 따라 취득한 진료기록 등의 정보·자료를 병역판정검사 외 목적으로 사용하거나 타인에게 제공하는 행위를 제한한다.",
+      "limits": "금지를 원문 파일에만 좁히지 않음. 모든 직접 제출자료에 자동 적용한다고 넓히지 않음. 연구용 파생변수의 출처와 법적 관계는 미확인."
+    }
+  ],
+  "companion_files": [
+    "hcdl-schema-2026-10-09.json",
+    "historical-catalogs-2026-10-09.json",
+    "official-announcements-2026-10-09.json",
+    "obs-report-2026-10-09.json",
+    "questions.ko.json",
+    "kdata-psychiatry-metadata-2026-10-09.json"
+  ],
+  "open_questions": [
+    "8+45열, 발표의 55항목, 현행 8+48열 간 산정 기준과 스키마 변경 이력",
+    "BR_CD 코드북, 질환·등급 매핑, 실제 제공값의 일반화·마스킹 방식",
+    "각 플랫폼 운영기관과 최종 승인 연구수행기관 및 실제 제공내역의 구분",
+    "K-data MMA_016의 개인·집계 단위, 실제 제공·이용 이력, 가명처리 방식·보유기간과 처리방침의 대응 항목",
+    "영구 수검자 파일, 의료영상 1년·10년, 문서 묶음 10년, 과거 PACS 사례의 현재 적용관계",
+    "스캔본·백업·결합정보·모델 등 종류별 보존·반출·파기 기준",
+    "법 제11조의2 취득정보의 포함 여부와 연구변수 생성 경위",
+    "향후 연구 활용 제외 요청의 자율 수용 정책",
+    "특정 개인의 연구데이터 포함 여부는 이 공개 조사로 판단할 수 없음"
+  ]
+}
