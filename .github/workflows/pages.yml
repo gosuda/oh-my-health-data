@@ -3,6 +3,17 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - src/**
+      - static/**
+      - scripts/**
+      - skills/**
+      - package.json
+      - package-lock.json
+      - svelte.config.js
+      - tsconfig.json
+      - vite.config.ts
+      - .github/workflows/pages.yml
   workflow_dispatch:
 
 permissions:
@@ -16,7 +27,7 @@ jobs:
   build:
     # Activate only after the campaign repository is public under gosuda.
     if: github.repository_owner == 'gosuda' && github.event.repository.private == false && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04-4
     timeout-minutes: 15
     steps:
       - name: Check out source
@@ -52,7 +63,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: depot-ubuntu-24.04-4
     timeout-minutes: 10
     permissions:
       pages: write
@@ -67,3 +78,4 @@ jobs:
       - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v5
+
