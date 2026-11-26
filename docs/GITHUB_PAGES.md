@@ -1,10 +1,12 @@
 # GitHub Pages 배포
 
-`https://oh-my-health-data.com`에 정적 사이트를 배포합니다. [배포 워크플로](../.github/workflows/pages.yml)는 `gosuda` 소유의 공개 저장소에서 `main` 브랜치를 푸시하거나 수동 실행할 때 동작합니다.
+The [deployment workflow](../.github/workflows/pages.yml) publishes the static site at `https://oh-my-health-data.com` from the public `gosuda` repository. Main pushes deploy only when application, static assets, public skills, scripts, dependencies or build configuration change. Documentation-only and research-only pushes do not deploy; manual runs remain available.
 
 ## 최초 설정
 
 운영 저장소는 [`gosuda/oh-my-health-data`](https://github.com/gosuda/oh-my-health-data)입니다. 저장소가 공개 상태이고 `main`에 배포 워크플로가 있어야 합니다.
+
+Both build and deployment require `depot-ubuntu-24.04-4`. Install the [Depot GitHub App](https://depot.dev/docs/github-actions/quickstart), grant it access to this repository, and allow the public repository in its runner group before automatic or manual runs. GitHub Pages and Depot access are separate prerequisites.
 
 1. gosuda 조직의 **Settings → Pages → Add a domain**에서 `oh-my-health-data.com`을 추가합니다. GitHub가 표시하는 TXT 레코드를 DNS에 등록하고 **Verify**를 누릅니다. 인증 후에도 TXT 레코드는 유지합니다.
 2. 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 선택합니다.
@@ -23,7 +25,7 @@
 
    IPv6도 사용하려면 `@`의 AAAA 레코드에 `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`을 추가합니다.
 
-5. **Actions → Deploy GitHub Pages → Run workflow → main**으로 첫 배포를 실행합니다. 이후에는 `main` 푸시마다 자동 배포됩니다.
+5. Start the first deployment with **Actions → Deploy GitHub Pages → Run workflow → main**. Later qualifying `main` pushes deploy automatically; use the same manual action when a documentation-only change needs a redeployment.
 6. Pages의 DNS 검사와 인증서 발급이 끝나면 **Enforce HTTPS**를 켭니다. DNS 반영과 HTTPS 옵션 활성화에는 최대 24시간이 걸릴 수 있습니다.
 
 조직의 Actions 정책에서 공식 `actions/*` 사용이 허용되어 있어야 합니다. 배포 환경의 브랜치 제한을 설정한다면 **Settings → Environments → github-pages**에서 `main`을 허용합니다. 별도 PAT나 배포용 Secret은 필요하지 않습니다.
